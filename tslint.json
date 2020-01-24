@@ -1,0 +1,11 @@
+{
+    "extends": "./node_modules/tslint/lib/configs/recommended",
+    "rulesDirectory": [
+    "node_modules/tslint-microsoft-contrib"
+    ],
+    "rules": {
+    "no-internal-module": false,
+    "no-namespace": false,
+    "trailing-comma": [true, {"multiline": "ignore", "singleline": "never"}]
+   }
+}
