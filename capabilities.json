@@ -8,7 +8,7 @@
         },
         {
             "displayName": "Subcategory",
-            "description": "Mandatory field. Maximumn limit is 10",
+            "description": "Mandatory field. Maximum limit is 10",
             "name": "category",
             "kind": "Grouping"
         },
@@ -263,7 +263,7 @@
             "description": "Display data label options",
             "properties": {
                 "show": {
-                    "displayName": "Show Labels",
+                    "displayName": "Show labels",
                     "type": {
                         "bool": true
                     },
@@ -502,21 +502,21 @@
         "configuration" : {
             "displayName": "Configuration",
             "properties": {
-                "arcradius": {
+                "arcRadius": {
                     "displayName": "Radius",
                     "description": "Radius option will take values from 5 to maximum size of viewport radius",
                     "type": {
                         "numeric": true
                     }
                 },
-                "cornerradius": {
+                "cornerRadius": {
                     "displayName": "Corner radius",
                     "description": "Corner radius option will take values from 0 to 10",
                     "type": {
                         "numeric": true
                     }
                 },
-                "strokecolor": {
+                "strokeColor": {
                     "displayName": "Stroke color",
                     "description": "Stroke color for the arcs",
                     "type": {
@@ -536,7 +536,7 @@
                 },
                 "fill": {
                     "displayName": "Central circle fill",
-                    "description": "Select the fill color for central label",
+                    "description": "Select the fill color for central circle",
                     "type": {
                         "fill": {
                             "solid": {
