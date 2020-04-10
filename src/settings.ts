@@ -26,13 +26,14 @@
 
 module powerbi.extensibility.visual {
   "use strict";
+  
   import DataViewObjectsParser = powerbi.extensibility.utils.dataview.DataViewObjectsParser;
 
   /**
    * VisualSettings class contains class variables.
    */
   export class VisualSettings extends DataViewObjectsParser {
-    public configuration: Configuartion = new Configuartion();
+    public configuration: Configuration = new Configuration();
     public colorSelector: DataPointSettings = new DataPointSettings();
     public legend: Legend = new Legend();
     public dataLabels: DataLabels = new DataLabels();
@@ -43,18 +44,16 @@ module powerbi.extensibility.visual {
   /**
    * DataLabels class contains variables for Data Labels.
    */
-  // tslint:disable-next-line: max-classes-per-file
   export class DataLabels {
     public show: boolean = true;
     public fontSize: number = 11;
     public fontFamily: string = "Segoe UI";
     public color: string = "#000";
-    public backgroundcolor: string = "#000";
+    public backgroundColor: string = "#000";
   }
   /**
    * DetailLabels class contains variables for Detail Labels.
    */
-  // tslint:disable-next-line: max-classes-per-file
   export class DetailLabelSettings {
     public show: boolean = false;
     public color: string = "#000";
@@ -66,14 +65,12 @@ module powerbi.extensibility.visual {
    /**
     * Animation class contains variables to show animation.
     */
-    // tslint:disable-next-line:max-classes-per-file
   export class Animation {
     public show: boolean = false;
   }
   /**
-   * CentralLabels class contains variables for Central Labels.
+   * CentralLabel class contains variables for Central Labels.
    */
-  // tslint:disable: max-classes-per-file
   export class CentralLabel {
     public show: boolean = true;
     public text: string = "Total";
@@ -95,13 +92,13 @@ module powerbi.extensibility.visual {
     public position: string = "Top";
   }
   /**
-   * Configuartion class contains variables to configure the arcs.
+   * Configuration class contains variables to configure the arcs.
    */
-  export class Configuartion {
-    public arcradius: number = 0;
-    public cornerradius: number = 0;
+  export class Configuration {
+    public arcRadius: number = 0;
+    public cornerRadius: number = 0;
     public padding: number = 0.00;
-    public strokecolor: string = "#FFF";
+    public strokeColor: string = "#FFF";
     public fill: string = "#FFF";
   }
   /**
