@@ -4,7 +4,7 @@
     "@types/d3": "^3.5.36",
     "@types/jquery": "^3.3.29",
     "d3": "^3.5.5",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "powerbi-models": "^1.1.0",
     "powerbi-visuals-utils-chartutils": "1.5.1",
     "powerbi-visuals-utils-colorutils": "^1.2.0",
